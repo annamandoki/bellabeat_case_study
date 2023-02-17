@@ -3,6 +3,221 @@ Bellabeat Case Study - Google Data Analytics Capstone Project 2
 Anna Mándoki
 2022-10-25
 
+- <a href="#1-introduction" id="toc-1-introduction">1. Introduction</a>
+  - <a href="#11-about-the-project" id="toc-11-about-the-project">1.1 About
+    the project</a>
+  - <a href="#12-about-bellabeat" id="toc-12-about-bellabeat">1.2 About
+    Bellabeat</a>
+    - <a href="#121-marketing-strategy-of-bellabeat"
+      id="toc-121-marketing-strategy-of-bellabeat">1.2.1 Marketing strategy of
+      Bellabeat</a>
+- <a href="#2-ask-phase" id="toc-2-ask-phase">2. Ask Phase</a>
+  - <a href="#21-business-objective" id="toc-21-business-objective">2.1
+    Business Objective</a>
+  - <a href="#22-business-task-for-the-junior-data-analyst"
+    id="toc-22-business-task-for-the-junior-data-analyst">2.2 Business Task
+    for the Junior Data Analyst</a>
+  - <a href="#23-about-fitbit" id="toc-23-about-fitbit">2.3 About FitBit</a>
+  - <a href="#24-bellabeat-vs-fitbit" id="toc-24-bellabeat-vs-fitbit">2.4
+    Bellabeat vs FitBit</a>
+  - <a href="#25-stakeholders-at-bellabeat"
+    id="toc-25-stakeholders-at-bellabeat">2.5 Stakeholders at Bellabeat</a>
+  - <a href="#26-key-steps-taken-in-the-ask-phase"
+    id="toc-26-key-steps-taken-in-the-ask-phase">2.6 Key steps taken in the
+    Ask Phase</a>
+- <a href="#3-prepare-phase" id="toc-3-prepare-phase">3. Prepare Phase</a>
+  - <a href="#31-dataset-location" id="toc-31-dataset-location">3.1 Dataset
+    location</a>
+  - <a href="#32-data-organization" id="toc-32-data-organization">3.2 Data
+    organization</a>
+  - <a href="#33-credibility-and-bias" id="toc-33-credibility-and-bias">3.3
+    Credibility and bias</a>
+  - <a href="#34-licensing-privacy-security"
+    id="toc-34-licensing-privacy-security">3.4 Licensing, privacy,
+    security</a>
+  - <a
+    href="#35-is-the-data-helpful-in-answering-the-question-in-the-business-task"
+    id="toc-35-is-the-data-helpful-in-answering-the-question-in-the-business-task">3.5
+    Is the data helpful in answering the question in the Business Task?</a>
+  - <a href="#36-datasets-selected-for-analysis"
+    id="toc-36-datasets-selected-for-analysis">3.6 Datasets selected for
+    analysis</a>
+  - <a href="#37-key-steps-taken-in-the-prepare-phase"
+    id="toc-37-key-steps-taken-in-the-prepare-phase">3.7 Key steps taken in
+    the Prepare Phase</a>
+- <a href="#4-process-phase" id="toc-4-process-phase">4. Process Phase</a>
+  - <a href="#41-tools" id="toc-41-tools">4.1 Tools</a>
+  - <a href="#42-setting-up-my-environment"
+    id="toc-42-setting-up-my-environment">4.2 Setting up my environment</a>
+  - <a href="#43-data-importing" id="toc-43-data-importing">4.3 Data
+    importing</a>
+  - <a href="#44-viewing-the-data-frames"
+    id="toc-44-viewing-the-data-frames">4.4 Viewing the data frames</a>
+    - <a href="#441-daily_activity" id="toc-441-daily_activity">4.4.1
+      daily_activity</a>
+    - <a href="#442-daily_calories" id="toc-442-daily_calories">4.4.2
+      daily_calories</a>
+    - <a href="#443-daily_intensities" id="toc-443-daily_intensities">4.4.3
+      daily_intensities</a>
+    - <a href="#444-daily_steps" id="toc-444-daily_steps">4.4.4
+      daily_steps</a>
+    - <a href="#445-hourly_steps" id="toc-445-hourly_steps">4.4.5
+      hourly_steps</a>
+    - <a href="#446-sleep_day" id="toc-446-sleep_day">4.4.6 sleep_day</a>
+    - <a href="#447-weight_log" id="toc-447-weight_log">4.4.7 weight_log</a>
+  - <a href="#45-check-the-number-of-unique-id-numbers"
+    id="toc-45-check-the-number-of-unique-id-numbers">4.5 Check the number
+    of unique ‘Id’ numbers</a>
+  - <a href="#46-observations-on-the-data-frames"
+    id="toc-46-observations-on-the-data-frames">4.6 Observations on the data
+    frames</a>
+  - <a href="#47-comparing-columns-and-values"
+    id="toc-47-comparing-columns-and-values">4.7 Comparing columns and
+    values</a>
+    - <a href="#471-compare-unique-id-numbers"
+      id="toc-471-compare-unique-id-numbers">4.7.1 Compare unique ‘Id’
+      numbers</a>
+    - <a href="#472-compare-dates" id="toc-472-compare-dates">4.7.2 Compare
+      dates</a>
+  - <a href="#48-convert-to-datetime" id="toc-48-convert-to-datetime">4.8
+    Convert to datetime</a>
+    - <a href="#481-convert-datetime-daily_activity"
+      id="toc-481-convert-datetime-daily_activity">4.8.1 Convert datetime:
+      ‘daily_activity’</a>
+    - <a href="#482-convert-datetimesleep_day"
+      id="toc-482-convert-datetimesleep_day">4.8.2 Convert
+      datetime:‘sleep_day’</a>
+    - <a href="#483-convert-datetime-and-split-columns-hourly_steps"
+      id="toc-483-convert-datetime-and-split-columns-hourly_steps">4.8.3.
+      Convert datetime and split columns: ‘hourly_steps’</a>
+  - <a href="#49-convert-id-numbers-to-character"
+    id="toc-49-convert-id-numbers-to-character">4.9 Convert ‘Id’ numbers to
+    character</a>
+    - <a href="#491-convert-id-numbers-to-character-daily_activity"
+      id="toc-491-convert-id-numbers-to-character-daily_activity">4.9.1
+      Convert ‘Id’ numbers to character: ‘daily_activity’</a>
+    - <a href="#492-convert-id-numbers-to-character-sleep_day"
+      id="toc-492-convert-id-numbers-to-character-sleep_day">4.9.2 Convert
+      ‘Id’ numbers to character: ‘sleep_day’</a>
+    - <a href="#493-convert-id-numbers-to-character-hourly_steps"
+      id="toc-493-convert-id-numbers-to-character-hourly_steps">4.9.3 Convert
+      ‘Id’ numbers to character: ‘hourly_steps’</a>
+  - <a href="#410-check-missing-values-if-any"
+    id="toc-410-check-missing-values-if-any">4.10 Check missing values if
+    any</a>
+  - <a href="#411-check-duplicated-values-if-any"
+    id="toc-411-check-duplicated-values-if-any">4.11 Check duplicated values
+    if any</a>
+  - <a href="#412-remove-duplicates" id="toc-412-remove-duplicates">4.12
+    Remove duplicates</a>
+  - <a href="#413-check-0-values" id="toc-413-check-0-values">4.13 Check 0
+    values</a>
+    - <a
+      href="#4131-check-0-values-and-create-data-frame-usage-from-daily_activity"
+      id="toc-4131-check-0-values-and-create-data-frame-usage-from-daily_activity">4.13.1
+      Check 0 values and create data frame ‘usage’ from ‘daily_activity’</a>
+    - <a href="#4132-check-0-values-in-sleep_day"
+      id="toc-4132-check-0-values-in-sleep_day">4.13.2 Check 0 values in
+      ‘sleep_day’</a>
+    - <a href="#4133-check-0-values-in-hourly_steps"
+      id="toc-4133-check-0-values-in-hourly_steps">4.13.3 Check 0 values in
+      ‘hourly_steps’</a>
+  - <a href="#414-extract-day-from-date-and-add-new-column"
+    id="toc-414-extract-day-from-date-and-add-new-column">4.14 Extract day
+    from date and add new column</a>
+    - <a href="#4141-add-column-weekday-to-daily_activity"
+      id="toc-4141-add-column-weekday-to-daily_activity">4.14.1 Add column
+      ‘Weekday’ to ‘daily_activity’</a>
+    - <a href="#4142-add-column-weekday-and-totalminutesawake-to-sleep_day"
+      id="toc-4142-add-column-weekday-and-totalminutesawake-to-sleep_day">4.14.2
+      Add column ‘Weekday’ and ‘TotalMinutesAwake’ to ‘sleep_day’</a>
+  - <a href="#415-key-steps-taken-in-the-process-phase"
+    id="toc-415-key-steps-taken-in-the-process-phase">4.15 Key steps taken
+    in the Process Phase</a>
+- <a href="#5-analyze-phase" id="toc-5-analyze-phase">5. Analyze Phase</a>
+  - <a href="#51-statistics" id="toc-51-statistics">5.1 Statistics</a>
+    - <a href="#511-daily_activity-summary"
+      id="toc-511-daily_activity-summary">5.1.1 ‘daily_activity’ summary</a>
+    - <a href="#512-observations-from-the-daily_activity-summary"
+      id="toc-512-observations-from-the-daily_activity-summary">5.1.2
+      Observations from the ‘daily_activity’ summary</a>
+    - <a href="#513-sleep_day-summary" id="toc-513-sleep_day-summary">5.1.3
+      ‘sleep_day’ summary</a>
+    - <a href="#514-observations-from-the-sleep_day-summary"
+      id="toc-514-observations-from-the-sleep_day-summary">5.1.4 Observations
+      from the sleep_day summary</a>
+    - <a href="#515-hourly_steps-summary"
+      id="toc-515-hourly_steps-summary">5.1.5 ‘hourly_steps’ summary</a>
+  - <a href="#52-exploratory-data-visualizations"
+    id="toc-52-exploratory-data-visualizations">5.2 Exploratory data
+    visualizations</a>
+    - <a href="#521-vigorous-physical-activity-and-calories-burned"
+      id="toc-521-vigorous-physical-activity-and-calories-burned">5.2.1
+      Vigorous physical activity and calories burned</a>
+    - <a href="#522-moderate-physical-activity-and-calories-burned"
+      id="toc-522-moderate-physical-activity-and-calories-burned">5.2.2
+      Moderate physical activity and calories burned</a>
+    - <a href="#523-light-physical-activity-and-calories"
+      id="toc-523-light-physical-activity-and-calories">5.2.3 Light physical
+      activity and calories</a>
+    - <a href="#524-sedentary-activity-and-calories"
+      id="toc-524-sedentary-activity-and-calories">5.2.4 Sedentary activity
+      and calories</a>
+    - <a href="#525-daily-steps-and-calories-burned"
+      id="toc-525-daily-steps-and-calories-burned">5.2.5 Daily steps and
+      calories burned</a>
+    - <a href="#526-minutes-asleep-and-total-time-in-bed"
+      id="toc-526-minutes-asleep-and-total-time-in-bed">5.2.6 Minutes asleep
+      and total time in bed</a>
+    - <a href="#527-minutes-asleep-during-the-week"
+      id="toc-527-minutes-asleep-during-the-week">5.2.7 Minutes asleep during
+      the week</a>
+    - <a href="#528-number-of-sleep-entries-by-users"
+      id="toc-528-number-of-sleep-entries-by-users">5.2.8 Number of sleep
+      entries by users</a>
+    - <a href="#529-average-time-in-bed"
+      id="toc-529-average-time-in-bed">5.2.9 Average time in bed</a>
+    - <a href="#5210-average-minutes-awake-by-users"
+      id="toc-5210-average-minutes-awake-by-users">5.2.10 Average minutes
+      awake by users</a>
+    - <a href="#5211-activity-logged-during-the-week"
+      id="toc-5211-activity-logged-during-the-week">5.2.11 Activity logged
+      during the week</a>
+    - <a href="#5212-activities-logged-during-the-week-by-users"
+      id="toc-5212-activities-logged-during-the-week-by-users">5.2.12
+      Activities logged during the week by users</a>
+    - <a href="#5213-number-of-steps-during-the-week"
+      id="toc-5213-number-of-steps-during-the-week">5.2.13 Number of steps
+      during the week</a>
+    - <a href="#5214-average-number-of-steps-during-the-week-by-users"
+      id="toc-5214-average-number-of-steps-during-the-week-by-users">5.2.14
+      Average number of steps during the week by users</a>
+    - <a href="#5215-average-hourly-steps"
+      id="toc-5215-average-hourly-steps">5.2.15 Average hourly steps</a>
+    - <a href="#5216-sedentary-activity-during-the-week"
+      id="toc-5216-sedentary-activity-during-the-week">5.2.16 Sedentary
+      activity during the week</a>
+    - <a href="#5217-average-sedentary-minutes-by-users"
+      id="toc-5217-average-sedentary-minutes-by-users">5.2.17 Average
+      sedentary minutes by users</a>
+    - <a href="#5218-summary-of-activity-minutes"
+      id="toc-5218-summary-of-activity-minutes">5.2.18 Summary of activity
+      minutes</a>
+    - <a href="#5219-usage" id="toc-5219-usage">5.2.19 Usage</a>
+  - <a href="#53-analysis-summary" id="toc-53-analysis-summary">5.3 Analysis
+    summary</a>
+    - <a href="#531-key-steps-taken-in-the-analyze-phase"
+      id="toc-531-key-steps-taken-in-the-analyze-phase">5.3.1 Key steps taken
+      in the Analyze Phase</a>
+    - <a href="#532-key-takeaways---identified-trends"
+      id="toc-532-key-takeaways---identified-trends">5.3.2 Key takeaways -
+      Identified trends</a>
+- <a href="#6-share-and-act-phases" id="toc-6-share-and-act-phases">6.
+  Share and Act Phases</a>
+  - <a href="#61-top-recommendations-for-the-bellabeat-app"
+    id="toc-61-top-recommendations-for-the-bellabeat-app">6.1 Top
+    recommendations for the Bellabeat app</a>
+
 ![Bellabeat](logo.png)
 
 ## 1. Introduction
