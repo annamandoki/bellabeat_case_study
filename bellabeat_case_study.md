@@ -226,8 +226,8 @@ Anna Mándoki
 
 This case study is my additional capstone project for the Google Data
 Analytics Professional Certificate course. Previously, I completed the
-Cyclistic Bike-Share Case Study. The purpose of this second case study
-is to keep experimenting with RStudio and to practice the skills I
+[Cyclistic Bike-Share Case Study](https://github.com/annamandoki/cyclistic_case_study). 
+The purpose of this second case study is to keep experimenting with RStudio and to practice the skills I
 acquired during the course.
 
 In this project I am assuming the role of a junior data analyst working

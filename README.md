@@ -27,9 +27,13 @@ Analyze a public dataset containing personal fitness tracker data from thirty *F
 ## Tools
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 RStudio Desktop
 =======
 Rstudio Desktop
 >>>>>>> 2b437bb9586e782229e389afa0383c2222835917
+=======
+RStudio Desktop
+>>>>>>> ef9c3ab14d8a39462e0c539d4ab761b4a6d4230a
 
 **Anna Mándoki - October 2022**
